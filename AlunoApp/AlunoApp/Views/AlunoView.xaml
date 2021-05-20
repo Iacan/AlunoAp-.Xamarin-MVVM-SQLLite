@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:util="clr-namespace:AlunoApp.Util"
+             x:Class="AlunoApp.Views.AlunoView">
+  <ContentView.Content>
+        <StackLayout Spacing="5">
+            <Entry x:Name="txtTitulo" Text="{Binding Titulo}" HeightRequest="40" BackgroundColor="White" 
+                   Placeholder="Nome do Aluno" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="txtLink" Text="{Binding Link}" BackgroundColor="White"  HeightRequest="40"   
+                   Placeholder="Email" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="txtRM" Text="{Binding RM}" 
+                   Keyboard="Numeric" HeightRequest="40" BackgroundColor="White" 
+                   Placeholder="Preencher com RM" HorizontalOptions="FillAndExpand"/>
+            <Editor x:Name="txtDescricao" Text="{Binding Descricao}" BackgroundColor="#e6f3e3" 
+                    HeightRequest="150" MaxLength="300" 
+                    AutoSize="TextChanges"
+                    Placeholder="Detalhes do Alunos" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
